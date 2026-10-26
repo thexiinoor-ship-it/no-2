@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy 16th Birthday, Bauni</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Noto+Naskh+Arabic:wght@500;700&display=swap">
+<style>
+:root{--bg:#07211f;--bg2:#0e3a35;--card:rgba(255,255,255,.07);--line:rgba(230,195,106,.35);--ink:#f4efe2;--soft:#a9c4bd;--gold:#e6c36a;--rose:#ff86ae;--on:#2a1d00;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f1e4;--bg2:#dcebe0;--card:rgba(255,255,255,.7);--line:rgba(154,107,15,.4);--ink:#12332e;--soft:#4d6b63;--gold:#8a5e08;--rose:#d93a74;--on:#fff;color-scheme:light}}
+:root[data-theme="dark"]{--bg:#07211f;--bg2:#0e3a35;--card:rgba(255,255,255,.07);--line:rgba(230,195,106,.35);--ink:#f4efe2;--soft:#a9c4bd;--gold:#e6c36a;--rose:#ff86ae;--on:#2a1d00}
+*,*::before,*::after{box-sizing:inherit}
+html,body{height:100%}
+body{margin:0;color:var(--ink);font:400 16px/1.6 "Plus Jakarta Sans",system-ui,sans-serif;display:flex;justify-content:center;align-items:center;padding:14px;
+background:radial-gradient(circle at 50% 0%,var(--bg2),var(--bg) 70%) fixed,var(--bg);
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cpath d='M32 4L38 19L53 13L47 28L60 32L47 36L53 51L38 45L32 60L26 45L11 51L17 36L4 32L17 28L11 13L26 19Z' fill='none' stroke='%23c9a84a' stroke-opacity='.13'/%3E%3C/svg%3E"),radial-gradient(circle at 50% 0%,var(--bg2),var(--bg) 70%)}
+main{width:100%;max-width:460px;min-height:600px;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:30px;padding:22px 20px 26px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.dots{display:flex;gap:6px;justify-content:center;margin-bottom:12px}
+.dots i{height:4px;flex:1;max-width:36px;border-radius:9px;background:var(--line)}
+.dots i.on{background:var(--gold)}
+.stage{display:none;flex:1;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px}
+.stage.on{display:flex}
+h1,h2{margin:0;letter-spacing:-.02em;line-height:1.05}
+h1{font-size:clamp(2.2rem,10vw,3rem);font-weight:800}
+h2{font-size:1.7rem;font-weight:800;color:var(--gold)}
+p{margin:0}.soft{color:var(--soft)}
+.ar{font-family:"Noto Naskh Arabic","Amiri",serif;font-size:1.55rem;line-height:2;direction:rtl;color:var(--gold)}
+button{font:inherit;color:inherit;cursor:pointer}
+.btn{background:var(--gold);color:var(--on);font-weight:700;border:0;border-radius:999px;padding:12px 28px}
+.btn:hover{filter:brightness(1.08)}
+.next{visibility:hidden}.next.show{visibility:visible}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.orb{width:150px;height:150px;border-radius:50%;border:1px solid var(--line);background:radial-gradient(circle,rgba(255,134,174,.25),transparent 70%);display:grid;place-items:center;padding:0}
+.orb svg{width:70px}
+.bis{font-family:"Noto Naskh Arabic",serif;font-size:1.5rem;color:var(--gold)}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:100%}
+.tl{background:none;border:0;padding:0}.tl svg{width:100%;max-width:84px;height:auto}
+.tl .open{display:none}.tl.on .open{display:inline}.tl.on .bud{display:none}
+.note,.letter{width:100%;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px}
+.note{min-height:92px}
+.note b{display:block;color:var(--rose);font-size:1.1rem}
+.face{font-size:4.6rem;line-height:1}
+.meter{width:100%;height:12px;border-radius:99px;overflow:hidden;background:var(--line)}
+.meter i{display:block;height:100%;width:0;background:var(--rose);transition:width .25s}
+.say{font-weight:700;font-size:1.2rem;min-height:2.2rem}
+.cat{background:none;border:0;padding:0;width:200px}.cat.pop{animation:pop .3s}
+@keyframes pop{50%{transform:scale(1.07) rotate(-3deg)}}
+.cards{display:grid;gap:10px;width:100%}
+.flip{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;min-height:98px}
+.flip.on{border-color:var(--gold)}.flip small{display:block;color:var(--soft)}.flip strong{font-size:1.1rem}
+.dua{width:100%;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.dua.on{border-color:var(--gold)}
+.dua .d{display:none;margin-top:8px}.dua.on .d{display:block}
+.dua em{display:block;color:var(--soft);font-size:.92rem}
+.dua small{color:var(--soft);display:block;margin-top:4px}
+.dua>b{color:var(--rose)}
+.lantern{background:none;border:0;padding:0;width:150px}
+.lantern .glow{opacity:0;transition:opacity .6s}
+.lantern.lit{filter:drop-shadow(0 0 22px rgba(230,195,106,.8))}.lantern.lit .glow{opacity:1}
+.letter{display:none;text-align:left}.letter.on{display:block}.letter p+p{margin-top:8px}
+.sign{color:var(--rose);font-weight:700;margin-top:8px}
+.fall{position:fixed;top:-30px;font-size:1.5rem;pointer-events:none;animation:fall 2.8s linear forwards;z-index:9}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.cat.pop{animation:none}.fall{display:none}.lantern .glow,.meter i{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<div class="dots" id="dots" aria-hidden="true"></div>
+
+<section class="stage on">
+  <p class="bis" lang="ar">بِسْمِ اللَّهِ</p>
+  <button class="orb" id="orb" aria-label="Open your birthday gift">
+    <svg viewBox="0 0 60 120"><path d="M30 50V115" stroke="#4fb883" stroke-width="5" stroke-linecap="round"/><path d="M30 102C14 100 8 88 8 78C22 82 30 92 30 102Z" fill="#7fd1a4"/><path d="M10 18C8 44 17 56 30 57C43 56 52 44 50 18C43 27 37 26 30 12C23 26 17 27 10 18Z" fill="#ff86ae"/></svg>
+  </button>
+  <p class="soft" id="g1">Tap the tulip to open</p>
+  <div id="g2" style="display:none">
+    <h1>Happy 16th Birthday, Bauni</h1>
+    <p style="margin-top:10px;color:var(--gold);font-weight:700">Barakallahu fi umrik</p>
+    <p class="soft" style="margin-top:6px">May Allah bless your life. Alishba, this is all for you.</p>
+  </div>
+  <button class="btn next" data-go="1">Let’s go</button>
+</section>
+
+<section class="stage">
+  <h2>Pick a tulip</h2>
+  <div class="row" id="row"></div>
+  <div class="note" id="note"><span class="soft">Each tulip hides something I love about you.</span></div>
+  <p class="soft" id="cnt">0 of 6</p>
+  <button class="btn next" data-go="2">Next</button>
+</section>
+
+<section class="stage">
+  <h2>Make Bauni angry</h2>
+  <div class="face" id="face">🙂</div>
+  <div class="meter"><i id="mt"></i></div>
+  <div class="say" id="say">Go on, press it.</div>
+  <button class="btn" id="anger">Annoy her</button>
+  <button class="btn next" data-go="3">Next</button>
+</section>
+
+<section class="stage">
+  <h2>Say hi to the cat</h2>
+  <button class="cat" id="cat" aria-label="Pet the white cat">
+    <svg viewBox="0 0 210 190"><path d="M150 150C190 150 205 110 185 90" fill="none" stroke="#f4efe2" stroke-width="7" stroke-linecap="round"/><ellipse cx="100" cy="140" rx="62" ry="40" fill="#fff"/><path d="M52 56L58 14L88 42ZM148 56L142 14L112 42Z" fill="#fff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><path d="M60 40L62 26L74 38ZM140 40L138 26L126 38Z" fill="#ffb3cc"/><circle cx="100" cy="82" r="48" fill="#fff"/><ellipse cx="80" cy="78" rx="5" ry="8" fill="#0b2b28"/><ellipse cx="120" cy="78" rx="5" ry="8" fill="#0b2b28"/><path d="M95 92L105 92L100 99Z" fill="#ff7aa6"/><path d="M100 99Q92 108 84 100M100 99Q108 108 116 100" fill="none" stroke="#0b2b28" stroke-width="3" stroke-linecap="round"/><path d="M66 94L40 90M66 100L42 106M134 94L160 90M134 100L158 106" stroke="#cfd8d4" stroke-width="2.5" stroke-linecap="round"/></svg>
+  </button>
+  <div class="say" id="cs">Tap the cat.</div>
+  <button class="btn next" data-go="4">Next</button>
+</section>
+
+<section class="stage">
+  <h2>Our songs</h2>
+  <div class="cards">
+    <button class="flip" data-t="Her favorite|“Aa Bhi Jao” by NFAK"><small>Tap to flip</small><strong>The song you love</strong></button>
+    <button class="flip" data-t="Ours|“Pregda Che Lawzuna” by Wajid Layaq. Together since August 2025."><small>Tap to flip</small><strong>The song that is ours</strong></button>
+  </div>
+  <button class="btn next" data-go="5">Next</button>
+</section>
+
+<section class="stage">
+  <h2>Duas for you</h2>
+  <p class="soft">Tap a card to read it. I made these for you.</p>
+  <div id="duas" style="display:grid;gap:8px;width:100%"></div>
+  <button class="btn next" data-go="6">Next</button>
+</section>
+
+<section class="stage">
+  <h2>Make a dua</h2>
+  <button class="lantern" id="lan" aria-label="Light the lantern and make dua">
+    <svg viewBox="0 0 150 190"><path d="M75 4a18 18 0 1 0 14 29a14 14 0 1 1-14-29Z" fill="#e6c36a"/><path d="M60 40h30l8 12H52Z" fill="#c9a84a"/><path d="M48 56h54l10 84H38Z" fill="#12403a" stroke="#e6c36a" stroke-width="3"/><g class="glow"><path d="M54 62h42l8 72H46Z" fill="#ffd978" opacity=".9"/><circle cx="75" cy="100" r="16" fill="#fff3c4"/></g><path d="M75 60V138M52 100H98" stroke="#e6c36a" stroke-width="2"/><path d="M36 140h78l-8 14H44Z" fill="#c9a84a"/></svg>
+  </button>
+  <p class="soft" id="wp">Tap the lantern, then say your dua.</p>
+  <div class="letter" id="letter">
+    <p>I want you to feel how much I care about you, because I do, every single day.</p>
+    <p>I pray that Allah keeps you happy and safe, and makes every step of your life easy. You don’t have to have your future figured out. Take your time. I will work hard for it, in shā’ Allāh.</p>
+    <p>Keep drawing, keep editing, keep being angry in the cutest way. Alhamdulillah for you. You are my favorite person.</p>
+    <p>Happy 16th birthday, Bauni. Barakallahu fi umrik.</p>
+    <div class="sign">With all my love</div>
+  </div>
+  <button class="btn next" data-go="0">Start again</button>
+</section>
+</main>
+
+<script>
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+var stages=$$(".stage"),dots=$("#dots");
+stages.forEach(function(){dots.appendChild(document.createElement("i"))});
+function go(n){stages.forEach(function(s,k){s.classList.toggle("on",k===n)});$$("i",dots).forEach(function(d,k){d.classList.toggle("on",k<=n)});if(n===0)reset()}
+function unlock(n){$(".next",stages[n]).classList.add("show")}
+function confetti(){var e=["🌷","✨","🌙","💖"];for(var k=0;k<26;k++){var f=document.createElement("span");f.className="fall";f.textContent=e[k%4];f.style.left=Math.random()*100+"vw";f.style.animationDelay=Math.random()*1.2+"s";document.body.appendChild(f);setTimeout(function(x){x.remove()},4500,f)}}
+$$(".next").forEach(function(b){b.onclick=function(){go(+b.dataset.go)}});
+
+$("#orb").onclick=function(){$("#g1").style.display="none";$("#g2").style.display="block";this.style.display="none";unlock(0);confetti()};
+
+var N=[["Your art","I’m so proud of every drawing and anime edit you make."],["Your anger","It’s your most annoying habit and your cutest. I laugh every time you try to be angry."],["Your cat","You and your white cat are both cute as hell."],["The simple things","Fast food, coffee, khari pakora. Such small things, and they make you happy."],["Your words","“Idk.” “Pata nhi.” “Achaa.” I could listen to you say them all day."],["You","I love your nose, your hair, and all of you. Alhamdulillah for you."]],seen=0;
+N.forEach(function(n,k){var b=document.createElement("button");b.className="tl";b.setAttribute("aria-label","Tulip "+(k+1));
+b.innerHTML='<svg viewBox="0 0 60 120"><path d="M30 50V115" stroke="#4fb883" stroke-width="5" stroke-linecap="round"/><path d="M30 102C14 100 8 88 8 78C22 82 30 92 30 102Z" fill="#7fd1a4"/><ellipse class="bud" cx="30" cy="38" rx="11" ry="17" fill="#d98aa6"/><path class="open" d="M10 18C8 44 17 56 30 57C43 56 52 44 50 18C43 27 37 26 30 12C23 26 17 27 10 18Z" fill="#ff86ae"/></svg>';
+b.onclick=function(){if(!b.classList.contains("on")){b.classList.add("on");seen++;$("#cnt").textContent=seen+" of 6";if(seen===6)unlock(1)}$("#note").innerHTML="<b>"+n[0]+"</b>"+n[1]};$("#row").appendChild(b)});
+
+var A=["Achaa.","Idk.","Pata nhi.","Hmph.","I’m NOT angry."],F=["😐","😒","😠","😤","😡"],hits=0;
+$("#anger").onclick=function(){if(hits>=5)return;hits++;$("#mt").style.width=hits*20+"%";$("#face").textContent=F[hits-1];
+if(hits<5){$("#say").textContent=A[hits-1]}else{$("#say").textContent="OK stop, I’m laughing. Cutest angry face ever.";$("#anger").style.display="none";unlock(2)}};
+
+var C=["Meow.","Purr…","Mrrp?","She’s the cutest, meow.","Okay, one more pet."],taps=0;
+$("#cat").onclick=function(){var c=this;c.classList.remove("pop");void c.offsetWidth;c.classList.add("pop");$("#cs").textContent=C[taps%C.length];taps++;if(taps>=3)unlock(3)};
+
+var done=0;
+$$(".flip").forEach(function(b){b.onclick=function(){if(b.classList.contains("on"))return;b.classList.add("on");var t=b.dataset.t.split("|");b.innerHTML="<small>"+t[0]+"</small><strong>"+t[1]+"</strong>";done++;if(done===2)unlock(4)}});
+
+var D=[
+["For learning and your art","رَبِّ زِدْنِي عِلْمًا","Rabbi zidni ilma","My Lord, increase me in knowledge.","Quran 20:114"],
+["For ease in everything","رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي","Rabbi ishrah li sadri wa yassir li amri","My Lord, expand my chest for me and make my task easy for me.","Quran 20:25–26"],
+["For this life and the next","رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ","Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina adhaban-nar","Our Lord, give us good in this world and good in the next, and protect us from the punishment of the Fire.","Quran 2:201"],
+["For guidance and a pure heart","اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى","Allahumma inni as’alukal-huda wat-tuqa wal-afafa wal-ghina","O Allah, I ask You for guidance, piety, chastity and self-sufficiency.","Sahih Muslim"],
+["When things feel heavy","حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ","Hasbunallahu wa ni’mal wakeel","Allah is sufficient for us, and He is the best disposer of affairs.","Quran 3:173"]],dn=0;
+D.forEach(function(d){var b=document.createElement("button");b.className="dua";
+b.innerHTML="<b>"+d[0]+'</b><div class="d"><div class="ar" lang="ar">'+d[1]+"</div><em>"+d[2]+"</em><p>"+d[3]+"</p><small>"+d[4]+"</small></div>";
+b.onclick=function(){if(!b.classList.contains("on")){b.classList.add("on");dn++;if(dn>=3)unlock(5)}else b.classList.remove("on")};$("#duas").appendChild(b)});
+
+$("#lan").onclick=function(){this.classList.add("lit");$("#wp").textContent="Raise your hands and make your dua. Ameen.";$("#letter").classList.add("on");unlock(6);confetti()};
+
+function reset(){
+$$(".next").forEach(function(b){b.classList.remove("show")});
+$("#orb").style.display="";$("#g1").style.display="";$("#g2").style.display="none";
+$$(".tl").forEach(function(t){t.classList.remove("on")});seen=0;$("#cnt").textContent="0 of 6";$("#note").innerHTML='<span class="soft">Each tulip hides something I love about you.</span>';
+hits=0;$("#mt").style.width="0";$("#face").textContent="🙂";$("#say").textContent="Go on, press it.";$("#anger").style.display="";
+taps=0;$("#cs").textContent="Tap the cat.";
+done=0;var f=$$(".flip");f[0].className=f[1].className="flip";f[0].innerHTML="<small>Tap to flip</small><strong>The song you love</strong>";f[1].innerHTML="<small>Tap to flip</small><strong>The song that is ours</strong>";
+dn=0;$$(".dua").forEach(function(d){d.classList.remove("on")});
+$("#lan").classList.remove("lit");$("#wp").textContent="Tap the lantern, then say your dua.";$("#letter").classList.remove("on");
+}
+go(0);
+</script>
+</body>
+</html>
